@@ -12,3 +12,11 @@ body { padding-top: 70px; }
 .navbar-inverse .navbar-nav>li>a {
     color: white;
 }
+body
+{
+    font-family: "Lato", sans-serif
+}
+#Yoga
+{
+    background-color: lightgray
+}
