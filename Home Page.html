@@ -8,13 +8,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
     body {font-family: "Lato", sans-serif}
-    .mySlides {display: none}
+    #Yoga {background-color: lightgray}
 </style>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
+    <div class="w3-bar w3-light-grey w3-card">
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
         <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!-- Navbar on small screens-->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
     <a href="#band" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large">PROJECTS</a>
@@ -41,24 +41,13 @@
             <h3>Madisonne Cooper</h3>
             <p><b>Software Developer</b></p>
         </div>
-    </div>
-    <div class="mySlides w3-display-container w3-center">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <h3>New York</h3>
-            <p><b>The atmosphere in New York is lorem ipsum.</b></p>
-        </div>
-    </div>
-    <div class="mySlides w3-display-container w3-center">
-        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-            <h3>Chicago</h3>
-            <p><b>Thank you, Chicago - A night we won't forget.</b></p>
-        </div>
-    </div>
+
 
     <!-- The Band Section -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
         <h2 class="w3-wide">Madisonne Cooper</h2>
         <p class="w3-opacity"><i>Future Developer</i></p>
+        <img width="300" src="https://mail.google.com/mail/u/0/?ui=2&ik=cc7e7d54f3&view=fimg&th=16548f4347f205a7&attid=0.1&disp=emb&realattid=16548f419b466863af11&attbid=ANGjdJ9xqUeNfsOXR5pqMa9NYd13LuPl11QY9_Un2Usn6gsq3OkocW1b-Q_7e_4qcO4k8tv9btocF7WS-0-j6zxawOtSQAn1J3wGCt3DUJ7fIsgBqzPOK9ENI88TYPg&sz=s0-l75-ft&ats=1534527330980&rm=16548f4347f205a7&zw&atsh=1">
         <p class="w3-justify">I am going through a 6 month bootcamp at The Code Crew School here in Memphis, TN. In these 6 months, we are learning Python, JavaScript, CSS, HTML, and much more. We are assigned exercises and projects after each lesson. Contained in this page are some of my best projects and personal work. Feel free to click around and check me out!
         <div class="w3-row w3-padding-32">
         </div>
@@ -154,57 +143,24 @@
 
     <!-- End Page Content -->
 </div>
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-    function myMap() {
-        myCenter=new google.maps.LatLng(41.878114, -87.629798);
-        var mapOptions= {
-            center:myCenter,
-            zoom:12, scrollwheel: false, draggable: false,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
-        };
-        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-        var marker = new google.maps.Marker({
-            position: myCenter,
-        });
-        marker.setMap(map);
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="Yoga">
+    <h2 class="w3-wide">Life Outside of Coding</h2>
+    <p class="w3-opacity"><i>Follow Me</i></p>
+    <button class="w3-button w3-black w3-margin-bottom"><a href="Yoga.html">Click Here</a></button>
+    <div class="w3-row w3-padding-32">
+    </div>
+</div>
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <p class="w3-medium"></p>
 </footer>
 
 <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 4000);
-    }
 
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
