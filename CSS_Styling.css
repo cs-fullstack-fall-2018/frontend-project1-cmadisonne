@@ -20,3 +20,7 @@ body
 {
     background-color: lightgray
 }
+#signUp-Body{
+    background-color: #ffe1e6;
+    font-family: "Lato", sans-serif;
+}
